@@ -2642,7 +2642,6 @@ h2.wed_without_after {
 /*Music Container*/
 .footer {
 align-content: center;
-	bottom: 15px;
 	z-index: 99;
 	height: 52px;
 	position: fixed;
