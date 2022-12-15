@@ -2639,6 +2639,15 @@ h2.wed_without_after {
 	position: fixed;
   transform: rotateZ(25deg)!important;	
 }
+/*Music Container*/
+.footer {
+align-content: center;
+	bottom: 15px;
+	z-index: 99;
+	height: 52px;
+	position: fixed;
+	width: 100%;
+}
 .wed_music_container {
 	background-image: url(../images/music_new_container.png);
 	background-position: center;
