@@ -534,7 +534,6 @@
 
 	// Page loader
 
-
 	/*SkroolR*/
 	if( !device.tablet() && !device.mobile() ) {
 		var s = skrollr.init({

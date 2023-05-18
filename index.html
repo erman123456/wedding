@@ -75,7 +75,7 @@
 </div>
 
 
-<body class="wed_fixed_bcg wed_white" style="margin: 0; height: 100%; overflow: hidden" id="body">
+<body class="wed_fixed_bcg wed_white">
 
 
 <!-- Music Bottom Container End -->
@@ -669,11 +669,9 @@
         document.getElementById('autoplay').play()
     }
     document.getElementById('openUndangan').onclick = function (){
-      const element =  document.getElementById('body')
-        element.style.height=null
-        element.style.overflow=null
+        $(".wed_page_loader div").fadeOut();
+        $(".wed_page_loader").delay(200).fadeOut("slow");
         document.getElementById('autoplay').play()
-        document.getElementById('openUndangan').remove()
     }
 </script>
 </body>
