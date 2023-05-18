@@ -45,7 +45,7 @@
 <!--</div>-->
 
 
-<audio controls autoplay loop >
+<audio controls loop id="autoplay">
     <source src="audio/endless-love.mp3" type="audio/mpeg">
 </audio>
 <div class="tab-nav-container footer">
@@ -650,6 +650,10 @@
 
 <!-- Theme JS -->
 <script src="js/wedding_script.js"></script>
-
+<script>
+    window.onload = function (){
+        document.getElementById('autoplay').play()
+    }
+</script>
 </body>
 </html>
