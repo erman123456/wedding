@@ -27,7 +27,8 @@
             referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="wed_fixed_bcg wed_white">
+
+<body class="wed_fixed_bcg wed_white" style="margin: 0; height: 100%; overflow: hidden" id="body">
 
 <!-- Music Bottom Container -->
 <div class="wed_music_content">
@@ -43,7 +44,6 @@
 <!--    <iframe allow="autoplay; fullscreen;" allowfullscreen loop autop-->
 <!--            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/432635724&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>-->
 <!--</div>-->
-
 
 <audio controls loop id="autoplay">
     <source src="audio/endless-love.mp3" type="audio/mpeg">
@@ -146,9 +146,17 @@
                  data--400-bottom="opacity:0;">
                 <img src="images/betty/cover.jpg" height="450" alt="">
                 <h4>10.06.2023</h4>
+                <a class="elementor-button" id="openUndangan" href="#">
+                                                                                        <span>
+                                                <i aria-hidden="true" class="far fa-envelope-open"></i>                                            </span>
+                    Buka Undangan                                        </a>
                 <h2 class="wed_margtop" style="font-size: xxx-large">
                     Danra Milliadi Siagian<br> & <br> Betty Aristantia Tambunan, Am.Keb
                 </h2>
+                <a class="elementor-button" id="openUndangan" href="#">
+                                                                                        <span>
+                                                <i aria-hidden="true" class="far fa-envelope-open"></i>                                            </span>
+                    Buka Undangan                                        </a>
             </div>
             <!-- Slider Texts End -->
         </div>
@@ -652,8 +660,14 @@
 <script src="js/wedding_script.js"></script>
 <script>
     window.onload = function (){
-        confirm('aryu ok')
         document.getElementById('autoplay').play()
+    }
+    document.getElementById('openUndangan').onclick = function (){
+      const element =  document.getElementById('body')
+        element.style.height=null
+        element.style.overflow=null
+        document.getElementById('autoplay').play()
+        document.getElementById('openUndangan').remove()
     }
 </script>
 </body>
