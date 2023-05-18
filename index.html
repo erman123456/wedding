@@ -93,17 +93,30 @@
 <!-- Preloader -->
 <div class="wed_page_loader">
 
-    <div class="wed_story_content wed_image_bck" data-color="#e4d4fb">
-        <div class="wed_heart_container_row_4">
-            <img class="wed_fourth_heart_1" src="images/small_people/heart_1.png" alt="">
-            <img class="wed_fourth_heart_2" src="images/small_people/heart_2.png" alt="">
-            <img class="wed_fourth_heart_3" src="images/small_people/heart_3.png" alt="">
+    <!-- Slider -->
+    <div class="body_center_page wed_slider wed_image_bck wed_fixed wed_wht_txt wed_slider_dandelions"
+         data-stellar-background-ratio="0.2" data-image="images/betty/cover.jpg">
+        <!-- over -->
+        <div class="wed_over" data-color="#000" data-opacity="0.2" data-blend="multiply"></div>
+
+        <div class="container text-center">
+            <!-- Slider Texts -->
+            <div class="wed_slide_txt wed_slide_center_bottom text-center" data-0="opacity:1;"
+                 data--400-bottom="opacity:0;">
+                <img src="images/betty/cover.jpg" height="450" alt="">
+                <h4>10.06.2023</h4>
+                <h2 class="wed_margtop" style="font-size: xxx-large">
+                    Danra Milliadi Siagian<br> & <br> Betty Aristantia Tambunan, Am.Keb
+                </h2>
+                <a id="openUndangan" href="#" class="btn btn_new">Buka Undangan</a>
+            </div>
+            <!-- Slider Texts End -->
         </div>
-        <div class="wed_story_small_img">
-            <img src="images/small_people/small_couple.png" alt="">
-        </div>
+        <!-- container end -->
 
     </div>
+    <!-- Slider End -->
+
 </div>
 <!-- Preloader End-->
 
@@ -130,7 +143,7 @@
     <!-- Backg Fixed End -->
 
     <!-- Slider -->
-    <div class="body_center_page wed_slider wed_image_bck wed_wht_txt"
+    <div class="body_center_page wed_slider wed_image_bck wed_fixed wed_wht_txt wed_slider_dandelions"
          data-stellar-background-ratio="0.2" data-image="images/betty/cover.jpg">
         <!-- over -->
         <div class="wed_over" data-color="#000" data-opacity="0.2" data-blend="multiply"></div>
@@ -142,7 +155,10 @@
                 <img src="images/betty/cover.jpg" height="450" alt="">
                 <h4>10.06.2023</h4>
                 <div class="button-group filter-button-group">
-                    <a href="#" id="openUndangan"><h3> Buka Undangan</h3></a>
+                    <a data-filter="*">Show All</a>
+                    <a data-filter=".web_design">Engagement</a>
+                    <a data-filter=".graphic_design">First Dates</a>
+                    <a data-filter=".logo_design">Trip</a>
                 </div>
                 <h2 class="wed_margtop" style="font-size: xxx-large">
                     Danra Milliadi Siagian<br> & <br> Betty Aristantia Tambunan, Am.Keb

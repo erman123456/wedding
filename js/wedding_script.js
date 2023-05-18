@@ -533,11 +533,6 @@
 	$(window).load(function(){
 
 	// Page loader
-        
-    $("body").imagesLoaded(function(){
-        $(".wed_page_loader div").fadeOut();
-    	$(".wed_page_loader").delay(200).fadeOut("slow");
-    });
 
 
 	/*SkroolR*/
