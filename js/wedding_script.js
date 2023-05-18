@@ -232,7 +232,7 @@
 			paginationSpeed : 200, 
 			rewindSpeed : 200, 
 			singleItem:true, 
-			autoPlay : false, 	
+			autoPlay : true,
 			touchDrag:false, 
 			navigationText:['<i class="ti ti-angle-left"></i>','<i class="ti ti-angle-right"></i>']
 		});
